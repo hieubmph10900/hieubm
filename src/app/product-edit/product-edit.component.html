@@ -1,0 +1,41 @@
+<p>product-edit works!</p>
+<h2>Thêm sản phẩm</h2>
+<form action="">
+  <div class="mb-3">
+    <label for="">Tiêu đề</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="product.name"
+      name="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="">Gia Tien</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="product.price"
+      name="price"
+    />
+  </div>
+  <div class="mb-3">
+    <label for=""> status</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="product.status"
+      name=" status"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="">Image</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="product.img"
+      name="img"
+    />
+  </div>
+  <button class="btn btn-primary" (click)="onUpdateProduct()">Cập nhật</button>
+</form>
